@@ -22,7 +22,7 @@ let setembed_general = ["не указано", "не указано", "не ук
 let setembed_fields = ["нет", "нет", "нет", "нет", "нет", "нет", "нет", "нет", "нет", "нет"];
 let setembed_addline = ["нет", "нет", "нет", "нет", "нет", "нет", "нет", "нет", "нет", "нет"];
 
-let serverid = '543500237306724393'
+let serverid = '507261769182609429'
 
 punishment_rep = ({
     "mute": "Вы были замучены в текстовых каналах.",
@@ -236,7 +236,7 @@ fbi_dostup.add("308604330246799360");
 bot.login(process.env.token);
 bot.on('ready', () => {
     console.log("Бот был успешно запущен!");
-    bot.user.setPresence({ game: { name: 'hacker' }, status: 'idle' })
+    bot.user.setPresence({ game: { name: 'MGW' }, status: 'online' })
 });
 
 // Система удаленного управления ботом для отключения,фиксов багов и т.д.
