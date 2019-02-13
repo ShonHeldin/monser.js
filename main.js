@@ -1291,7 +1291,7 @@ bot.on('message', async message => {
     let dataserver = bot.guilds.find(g => g.id == "543862677328494612");
     let scottdale = bot.guilds.find(g => g.id == "355656045600964609");
     if (!dataserver){
-        message.channel.send(`\`Data-Server of Monser Gang War не был загружен!\nПередайте это сообщение техническим администраторам Discord:\`<@336207279412215809>, <@402092109429080066>`)
+        message.channel.send(`\`Data-Server of Monser Gang War не был загружен!\nПередайте это сообщение техническому администратору Discord:\`<@449307837399695365>`)
         console.error(`Процесс завершен. Data-Server не найден.`)
         return bot.destroy();
     }
