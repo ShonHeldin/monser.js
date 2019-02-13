@@ -241,7 +241,7 @@ bot.on('ready', () => {
 
 bot.on('guildMemberAdd', async member => {
 let channel = member.guild.channels.find(c => c.name == 'general');
-channel.send("Приветствую тебя," + member.id)
+channel.send("Приветствую тебя," + member)
 
 })
 
