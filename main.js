@@ -239,6 +239,12 @@ bot.on('ready', () => {
     bot.user.setPresence({ game: { name: 'MGW' }, status: 'online' })
 });
 
+bot.on('guildMemberAdd', async member => {
+let channel = member.guild.channels.find(c => c.name == 'general');
+channel.send("Приветствую тебя, " + <@member.id>)
+
+})
+
 // Система удаленного управления ботом для отключения,фиксов багов и т.д.
 bot.on('message', async message => {
     if (message.guild.id == '488400983496458260'){
