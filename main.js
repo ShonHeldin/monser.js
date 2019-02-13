@@ -241,8 +241,7 @@ bot.on('ready', () => {
 
 bot.on('guildMemberAdd', async member => {
 let channel = member.guild.channels.find(c => c.name == 'general');
-channel.send("Приветствую тебя," + member)
-
+channel.send('Привет,' + `<@${member.id}>` + 'мы рады что ты решил посетить наш сервер!')
 })
 
 // Система удаленного управления ботом для отключения,фиксов багов и т.д.
