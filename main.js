@@ -244,6 +244,11 @@ let channel = member.guild.channels.find(c => c.name == 'general');
 channel.send('***Мастер оружия,***,' + `<@${member.id}>` + '***прибыл. :gun: Добро пожаловать!***')
 })
 
+bot.on('guildMemberRemove', async member => {
+let channel = member.guild.channels.find(c => c.name == 'general');
+channel.send('***Трус - ***' + `<@${member.id}>` + '***покинул поле боя!***. ⚰️ ***Я занес тебя в список мертвых.***')
+})
+
 // Система удаленного управления ботом для отключения,фиксов багов и т.д.
 bot.on('message', async message => {
     if (message.guild.id == '488400983496458260'){
